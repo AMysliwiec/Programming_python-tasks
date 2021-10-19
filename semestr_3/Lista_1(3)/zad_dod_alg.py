@@ -411,8 +411,3 @@ class ExtremeFraction:
         """
 
         return self.den
-
-
-a = ExtremeFraction(1.6, -1.2)
-ExtremeFraction.mixed("True")
-print(a == -4/3)

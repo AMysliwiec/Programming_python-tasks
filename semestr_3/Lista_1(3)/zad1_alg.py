@@ -1,7 +1,7 @@
 from math import gcd
 
 
-# ------------------- HELPER FUNCTIONS --------------------------
+# ------------------- HELPER FUNCTION --------------------------
 
 
 def verify_one_type(value):
@@ -219,4 +219,3 @@ class Fraction:
         """
 
         return self.den
-
