@@ -20,9 +20,11 @@ def pythagorean_triple_1(l):
 def pythagorean_triple_2(l):
     operations = 0
     for a in range(1, l):
+        operations += 1
         for b in range(a + 1, l):
+            operations += 1
             for c in range(b + 1, l):
-                operations += 11
+                operations += 9
                 if a ** 2 + b ** 2 == c ** 2 and a + b + c == l:
                     return True, [a, b, c], operations
 
@@ -32,9 +34,12 @@ def pythagorean_triple_2(l):
 def pythagorean_triple_3(l):
     operations = 0
     for a in range(1, l):
+        operations += 1
         for b in range(a + 1, l):
-            for c in range(b + 1, a + b):
-                operations += 12
+            limit = a + b
+            operations += 2
+            for c in range(b + 1, limit):
+                operations += 9
                 if a ** 2 + b ** 2 == c ** 2 and a + b + c == l:
                     return True, [a, b, c], operations
 
@@ -44,9 +49,10 @@ def pythagorean_triple_3(l):
 def pythagorean_triple_4(l):
     operations = 0
     for a in range(1, l):
+        operations += 1
         for b in range(a + 1, l):
             c = l - a - b
-            operations += 8
+            operations += 7
             if a ** 2 + b ** 2 == c ** 2:
                 return True, [a, b, c], operations
 
@@ -71,7 +77,7 @@ def pythagorean_triple_6(l):
     for a in range(1, limit):
         b = int((l ** 2 - 2 * a * l) / (2 * (l - a)))
         c = l - a - b
-        operations += 16
+        operations += 14
         if a ** 2 + b ** 2 == c ** 2:
             return True, [a, b, c], operations
 
@@ -133,12 +139,14 @@ def pythagorean_triple_parametric(l):
             c = n ** 2 + m ** 2
 
             sum = a + b + c
-            operations += 12
+            operations += 11
             if l % sum == 0:
 
                 factor = l // sum
+                operations += 2
+
                 if factor != 0:
-                    operations += 5
+                    operations += 3
 
                     list_of_numbers = [a * factor, b * factor, c * factor]
                     list_of_numbers.sort()
@@ -161,13 +169,19 @@ def all_pythagorean_triple(l):
     """
     This function finds all the possible pythagorean triples
     """
-    operations, triplets = 0, []
-    for a in range(1, l // 3):
+    operations, triplets = 2, []
+    limit = l // 3
+
+    for a in range(1, limit):
         b = int((l ** 2 - 2 * a * l) / (2 * (l - a)))
         c = l - a - b
         operations += 14
         if a ** 2 + b ** 2 == c ** 2:
-            triplets.append([a, b, c])
+            triple = [a, b, c]
+            triple.sort()
+            if triple in triplets:
+                break
+            triplets.append(triple)
 
     if len(triplets) == 0:
         return False, [-1, -1, -1], operations
