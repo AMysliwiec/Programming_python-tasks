@@ -25,3 +25,4 @@ def counting_chars_without_ifs(filename):
         char_count[key] = how_many_chars
 
     return char_count
+
