@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html  >
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Home Page &lt; Jarosław Gruszka</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://prac.im.pwr.edu.pl/~gruszka/theme/CleanBlogGh/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="http://prac.im.pwr.edu.pl/~gruszka/theme/CleanBlogGh/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="http://prac.im.pwr.edu.pl/~gruszka/theme/CleanBlogGh/css/clean-blog.min.css?v=1-5" rel="stylesheet">
+    <!-- <link href="http://prac.im.pwr.edu.pl/~gruszka/theme/CleanBlogGh/css/clean-blog.css?v=1-4" rel="stylesheet"> -->
+
+    <meta name="keywords" content="gruszka, pwr, matematyka, mathematics, stosowana, applied, doktorant, PhD" />
+<link rel="canonical" href="http://prac.im.pwr.edu.pl/~gruszka/" />
+
+<!-- Google Analytics plugin -->
+<!-- Admin cookie detected; Google Analytics tracking disabled. -->
+
+
+    
+  </head>
+  <body id="index" >
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="http://prac.im.pwr.edu.pl/~gruszka/">Jarosław Gruszka</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link  current active " href="http://prac.im.pwr.edu.pl/~gruszka/" title="Home Page">Home</a></li>
+<li class="nav-item"><a class="nav-link " href="http://prac.im.pwr.edu.pl/~gruszka/index.php?id=about-me" title="About me">About me</a></li>
+<li class="nav-item"><a class="nav-link " href="http://prac.im.pwr.edu.pl/~gruszka/index.php?id=teaching" title="Teaching">Teaching</a></li>
+                                  </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+
+    <header class="masthead" style="background-image: url('http://prac.im.pwr.edu.pl/~gruszka/data/uploads/VTower.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Home Page</h1>
+                          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+			<h2>mgr inż. Jarosław Gruszka</h2>
+
+<p>PhD student of Mathematics</p>
+
+<p><img alt="" src="http://prac.im.pwr.edu.pl/~gruszka/data/uploads/Jarek.jpg" style="width: 250px; height: 250px; float: left; margin-right: 20px" /></p>
+
+<p><a href="http://pwr.edu.pl/" target="_blank">Wrocław University of Science and Technology</a><br />
+	<a href="http://wmat.pwr.edu.pl/" target="_blank">Faculty of Pure and Applied Mathematics</a></p>
+
+<p>building C-11, room 6.06,<br />
+	14A Janiszewskiego St.<br />
+	50-372&nbsp;Wrocław<br />
+	Poland</p>
+
+<p>e-mail: jaroslaw.gruszka[at]pwr.edu.pl</p>
+
+<div class="my-warning-box">
+	<p class="my-warning-sign">!!!</p>
+
+	<p class="my-warning-note">This entire webpage has been recently thoroughly reconstructed&nbsp;(mainly due to the need for translating it into English). If you therefore spot any errors, typos, missing links - I would be very thankful for passing this information to me via the e-mail provided above.</p>
+
+	<div style="clear: both;  height: 0px">&nbsp;</div>
+</div>
+			<p class="smaller-font"> Last update -  2nd October </p>
+		</div>
+              </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+                        <ul class="list-inline text-center">
+              <!-- Email =================================== -->
+                            <!-- Facebook =================================== -->
+                            <!-- Twitter =================================== -->
+                            <!-- Instagram =================================== -->
+                          </ul>
+            <p class="copyright text-muted">Copyright &copy; Jarosław Gruszka 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="http://prac.im.pwr.edu.pl/~gruszka/theme/CleanBlogGh/vendor/jquery/jquery.min.js"></script>
+    <script src="http://prac.im.pwr.edu.pl/~gruszka/theme/CleanBlogGh/vendor/popper/popper.min.js"></script>
+    <script src="http://prac.im.pwr.edu.pl/~gruszka/theme/CleanBlogGh/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="http://prac.im.pwr.edu.pl/~gruszka/theme/CleanBlogGh/js/clean-blog.min.js?v=1-5"></script>
+    <!-- <script src="http://prac.im.pwr.edu.pl/~gruszka/theme/CleanBlogGh/js/clean-blog.js"></script> -->
+
+    
+  </body>
