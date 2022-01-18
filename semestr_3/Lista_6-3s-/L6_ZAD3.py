@@ -1,9 +1,9 @@
 class LimitedBinHeap:
 
-    def __init__(self, max_size):
+    def __init__(self, limit):
         self.heap_list = [0]
         self.current_size = 0
-        self.max_size = max_size
+        self.limit = limit
 
     def size(self):
         return self.current_size
@@ -11,46 +11,46 @@ class LimitedBinHeap:
     def is_empty(self):
         return self.current_size == 0
 
-    def perc_up(self, index):
-        while index // 2 > 0:
-            if self.heap_list[index] < self.heap_list[index // 2]:
-                tmp = self.heap_list[index // 2]
-                self.heap_list[index // 2] = self.heap_list[index]
-                self.heap_list[index] = tmp
-            index //= 2
+    def perc_up(self, i):
+        while i // 2 > 0:
+            if self.heap_list[i] < self.heap_list[i // 2]:
+                tmp = self.heap_list[i // 2]
+                self.heap_list[i // 2] = self.heap_list[i]
+                self.heap_list[i] = tmp
+            i //= 2
 
     def find_min(self):
         return self.heap_list[1]
 
-    def min_child(self, index):
-        if index * 2 + 1 > self.current_size:
-            return index * 2
+    def min_child(self, i):
+        if i * 2 + 1 > self.current_size:
+            return i * 2
         else:
-            if self.heap_list[index * 2] < self.heap_list[index * 2 + 1]:
-                return index * 2
+            if self.heap_list[i * 2] < self.heap_list[i * 2 + 1]:
+                return i * 2
             else:
-                return index * 2 + 1
+                return i * 2 + 1
 
-    def perc_down(self, index):
-        while (index * 2) <= self.current_size:
-            smaller_child = self.min_child(index)
-            if self.heap_list[index] > self.heap_list[smaller_child]:
-                tmp = self.heap_list[index]
-                self.heap_list[index] = self.heap_list[smaller_child]
-                self.heap_list[smaller_child] = tmp
-            index = smaller_child
+    def perc_down(self, i):
+        while (i * 2) <= self.current_size:
+            mc = self.min_child(i)
+            if self.heap_list[i] > self.heap_list[mc]:
+                tmp = self.heap_list[i]
+                self.heap_list[i] = self.heap_list[mc]
+                self.heap_list[mc] = tmp
+            i = mc
 
     def del_min(self):
-        min_value = self.heap_list[1]
+        retval = self.heap_list[1]
         self.heap_list[1] = self.heap_list[-1]
         self.current_size -= 1
         self.heap_list.pop()
         self.perc_down(1)
-        return min_value
+        return retval
 
     def insert(self, k):
 
-        if self.current_size < self.max_size:
+        if self.current_size < self.limit:
             self.heap_list.append(k)
             self.current_size += 1
             self.perc_up(self.current_size)
@@ -64,19 +64,19 @@ class LimitedBinHeap:
     def build_heap(self, build_list):
 
         size = len(build_list)
-        if size > self.max_size:
-            max_list = build_list[:self.max_size]
-            self.build_heap(max_list)
-
-            for i in build_list[self.max_size:]:
-                self.insert(i)
-        else:
-            index = size // 2
+        if size <= self.limit:
+            i = size // 2
             self.current_size = size
             self.heap_list = [0] + build_list[:]
-            while index > 0:
-                self.perc_down(index)
-                index -= 1
+            while i > 0:
+                self.perc_down(i)
+                i -= 1
+        else:
+            limit_list = build_list[:self.limit]
+            self.build_heap(limit_list)
+
+            for k in build_list[self.limit:]:
+                self.insert(k)
 
     def __str__(self):
         return str(self.heap_list[1:])
